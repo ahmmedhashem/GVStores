@@ -1,0 +1,111 @@
+@import "../../../styles.scss";
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 9;
+    overflow: hidden;
+    box-shadow: none;
+    
+    .container-fluid{
+        padding: 0 100px;
+        @media (min-width: $width1) and (max-width: $width2) { 
+            flex-direction: row-reverse;
+            padding: 0 22px;
+         
+        }
+        .navbar-brand{
+            width :184px;
+            height :55.86px;
+            @media (min-width: $width1) and (max-width: $width2) { 
+                width: 126px;
+                position: relative;
+                left: -124px;
+
+             
+             }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .navbar-toggler{
+            border-color: unset;
+            box-shadow: none;
+            border: none;
+            svg{
+                width: 28px;
+                height: 28px;
+            }
+        }
+        .collapse{
+            margin-left: 18%;
+            @media (min-width: $width1) and (max-width: $width2) { 
+               text-align: center;
+               margin-left: unset;
+               border-bottom-right-radius: 20px;
+               border-bottom-left-radius: 20px;
+               background-color: rgb(216 55 81 / 50%);
+               padding: 25px 10px;
+
+            }
+            ul{
+                padding: 30px 0;
+                @media (min-width: $width1) and (max-width: $width2) { 
+                    padding: 0px 40px 25px 40px;
+                }
+                li{
+                    margin-right: 58px;
+                    @media (min-width: $width1) and (max-width: $width2) { 
+                        border-bottom: 1px solid #d32844;
+                        padding: 10px 0;
+                        margin-right: unset;
+                    }
+                    
+                    a{
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 17px;
+                        line-height: 20px;
+                        color: #161616;
+
+                    }
+                }
+                li:last-of-type{
+                    margin-right: unset;
+                }
+            }
+            form{
+                button{
+                    border: none;
+                    margin-right: 18px;
+                    @media (min-width: $width1) and (max-width: $width2) { 
+                        margin-right: unset;
+                        margin: 0 auto;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 17px;
+                        line-height: 20px;
+                        text-align: right;
+                        color: #FFFFFF;
+                        
+                    }
+                }
+                .signup{
+                    background: #DA0A2C;
+                    border-radius: 68px;
+                    padding: 10px 50px;
+                }
+            }
+        }
+    }
+   
+}

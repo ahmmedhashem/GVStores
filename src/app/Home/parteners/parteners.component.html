@@ -1,0 +1,14 @@
+<div class="parteners">
+    <div class="container">
+        <div class="part-cont">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let partener of parteners">
+                    <div class="cont">
+                        <img src="{{partener}}" alt="partiner">
+                    </div>
+                </ng-template>  
+            </owl-carousel-o>
+        </div>
+
+    </div>
+</div>

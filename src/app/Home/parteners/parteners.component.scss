@@ -1,0 +1,12 @@
+@import "../../../styles.scss";
+
+.parteners{
+    background: #1E1E1E;
+    padding: 60px 0;
+    @media (min-width: $width1) and (max-width: $width2) { 
+       padding: 8px 0;
+    }
+    .part-cont{
+        margin-top: 20px;
+    }
+}
